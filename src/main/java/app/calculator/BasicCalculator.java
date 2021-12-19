@@ -32,7 +32,7 @@ public class BasicCalculator {
 
     public static void results(Long number1, Long number2) {
         BasicCalculator calculator = new BasicCalculator();
-
+        out.println("\nLog Processing...");
         Long resultSum = calculator.sum(number1, number2);
         Long resultSub = calculator.subtraction(number1, number2);
         Long resultMulti = calculator.multiply(number1, number2);
@@ -42,6 +42,7 @@ public class BasicCalculator {
     }
 
     private static void printResults(Long number1, Long number2, Long resultSum, Long resultSub, Long resultMulti, Long resultDiv) {
+        out.println("\nResults:");
         out.println(number1 + " + " + number2 + " = " + resultSum);
         out.println(number1 + " - " + number2 + " = " + resultSub);
         out.println(number1 + " * " + number2 + " = " + resultMulti);
